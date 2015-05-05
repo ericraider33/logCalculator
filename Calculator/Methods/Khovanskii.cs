@@ -2,12 +2,12 @@
 
 namespace Calculator.Methods
 {
-    public class Khovanskii
+    public class Khovanskii : ILogCalculator
     {
         public decimal calculate(decimal x, int attempts)
         {
             if (x > 3.14m || x < -3.14m)
-                throw new ArgumentException("Range can't be computed");
+                throw new ArgumentException("Value is outside of computation range");
 
             decimal z = x - 1;
             decimal zSquared = z * z;
