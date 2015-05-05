@@ -5,16 +5,16 @@ using NUnit.Framework;
 namespace CalculatorTest.Methods
 {
     [TestFixture]
-    public class KhovanskiiTest
+    public class MaclaurinATest
     {
-        Khovanskii calculator = new Khovanskii();
+        MaclaurinA calculator = new MaclaurinA();
 
         [Test]
         public void testAttemptsLn2()
         {
             AttemptsFinder finder = new AttemptsFinder();
             int attempts = finder.testCalculator(calculator);
-            Assert.AreEqual(12, attempts);
+            Assert.AreEqual(-1, attempts);                          // never reaches range
         }
 
         [Test]
@@ -22,7 +22,8 @@ namespace CalculatorTest.Methods
         {
             AttemptsFinder finder = new AttemptsFinder { X = 0.5m, AcceptableMin = Constants.LN_0_5_MIN, AcceptableMax = Constants.LN_0_5_MAX };
             int attempts = finder.testCalculator(calculator);
-            Assert.AreEqual(12, attempts);
+            Assert.AreEqual(59, attempts);                          
         }
     }
+
 }

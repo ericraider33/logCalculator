@@ -13,15 +13,16 @@ namespace Calculator
         public static void Main(string[] args)
         {
             ILogCalculator cal = new Eschenbach();
-            Console.WriteLine(cal.calculate(2, 1));
-            Console.WriteLine(cal.calculate(2, 2));
-            Console.WriteLine(cal.calculate(2, 3));
-            Console.WriteLine(cal.calculate(2, 4));
-            Console.WriteLine(cal.calculate(2, 5));
-            Console.WriteLine(cal.calculate(2, 6));
-            Console.WriteLine(cal.calculate(2, 7));
-            Console.WriteLine(cal.calculate(2, 8));
-            Console.WriteLine(cal.calculate(2, 9));
+            Console.WriteLine(cal.calculate(200m, 100000));
+//            Console.WriteLine(cal.calculate(0.5m, 1));
+//            Console.WriteLine(cal.calculate(0.5m, 2));
+//            Console.WriteLine(cal.calculate(0.5m, 3));
+//            Console.WriteLine(cal.calculate(0.5m, 4));
+//            Console.WriteLine(cal.calculate(0.5m, 5));
+//            Console.WriteLine(cal.calculate(0.5m, 6));
+//            Console.WriteLine(cal.calculate(0.5m, 7));
+//            Console.WriteLine(cal.calculate(0.5m, 8));
+//            Console.WriteLine(cal.calculate(0.5m, 9));
            
             Console.ReadLine();
         }

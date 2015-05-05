@@ -1,4 +1,5 @@
 ﻿using Calculator.Methods;
+using Calculator.Utils;
 
 namespace CalculatorTest
 {

@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Methods\MaclaurinBTest.cs" />
     <Compile Include="Methods\EschenbachTest.cs" />
     <Compile Include="Methods\KhovanskiiTest.cs" />
+    <Compile Include="Methods\MaclaurinATest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AttemptsFinder.cs" />
   </ItemGroup>
